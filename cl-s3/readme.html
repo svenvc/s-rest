@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>CL-S3</title>
+<meta name="description" content="CL-S3, A Common Lisp library to access Amazon's S3 Web Service" />
+<meta name="keywords" content="lisp, s3, rest, webservice, amazon, common lisp, api" />
+<meta name="author" content="Sven Van Caekenberghe" />
+<meta name="Copyright" content="Copyright (c) 2006 Sven Van Caekenberghe" />
+<style type="text/css">
+body {
+ font-family:sans-serif;
+ font-size:1em;
+ width:80%;
+}
+</style>
+</head>
+<body>
+<h1>CL-S3</h1>
+<p>CL-S3 is a Common Lisp library that implements a client interface to the 
+<a href="http://aws.amazon.com/s3">Amazon S3 Web Service</a>.</p>
+<p>More specifically, CL-S3</p>
+<ul> 
+  <li>uses the Amazon S3 REST interface</li>
+  <li>does proper authorization</li>
+  <li>implements all S3 API calls with all options</li>
+  <li>parses the XML returned by some of the API</li>
+  <li>converts S3 error responses to proper Common Lisp condition objects</li>
+  <li>allows custom meta header (including canned access policies) and query parameters</li>
+  <li>does proper keep-alive processing (courtesy s-http-client)</li>
+  <li>is portable over Common Lisp implementations (courtesy s-sysdeps)</li>
+  <li>can optionally validate get and put object calls using MD5 hashing</li>
+  <li>contains 2 example higher level functions converting XML to simpler data</li>
+  <li>contains 2 example higher level functions for uplaoding and downloading files to and from S3</li>
+  <li>is properly packaged and has a <a href="cl-s3.html">documented public API</a></li>
+  <li>should be installed using ASDF</li>
+</ul>
+<p>You can download the code using the URL
+<a href="http://homepage.mac.com/svc/cl-s3/cl-s3.tgz">http://homepage.mac.com/svc/cl-s3/cl-s3.tgz</a>
+or from S3 itself using the URL
+<a href="http://s3.amazonaws.com:80/be-wolf359-test/cl-s3.tgz">http://s3.amazonaws.com:80/be-wolf359-test/cl-s3.tgz</a>.</p>
+<p>CL-S3 was written by <a href="http://homepage.mac.com/svc">Sven Van Caekenberghe</a>
+and is available under an LLGPL license. The current release, dated May 30 2007,
+is available as a tarball only.</p>
+<p>Please read the full Amazon S3 documentation and study the Common Lisp source code before 
+contacting me with ;-)</p> 
+<p>There is an interesting 
+<a href="http://zoetrope.speakermouth.com/2007/5/29/using-common-lisp-to-store-your-data-on-amazon-s3">post</a>
+on Nicky Peeters' Blog showing how to get started using CL-S3.</p>
+</div>
+</body>
+</html>
